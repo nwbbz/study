@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title></title>
+		<style>
+		body{
+			background:#00f;
+		}
+			.main{width:500px; height: 500px; position: absolute; top: 50%; left: 50%;
+			margin-top:-250px; margin-left:-250px;
+			perspective: 1100px;
+			}
+			.a{
+				width:200px;
+				height: 200px;
+				position: absolute;
+				animation: name 5s infinite linear;
+				transform-origin: 100px;
+				transform-style: preserve-3d;
+				margin-top:150px;
+			}
+			.a>div{
+				width:200px;
+				height: 200px;
+				background: #222222;
+				opacity: 0.5;
+				position: absolute;
+				color: #fff;
+				border:1px solid #fff;
+				font-size:30px;
+				text-align: center;
+				line-height: 200px;
+				
+			}
+			.a div:nth-child(1){
+				transform: translateZ(100px);
+				/*background: #0000FF;*/
+			}
+			.a:hover div:nth-child(1){
+				transform: translateZ(200px);
+				/*background: #0000FF;*/
+			}
+			.a div:nth-child(2){
+				transform: translateZ(-100px);
+				/*background: #0000FF;*/
+			}
+			.a:hover div:nth-child(2){
+				transform: translateZ(-200px);
+				/*background: #0000FF;*/
+			}
+			.a div:nth-child(3){
+				transform: translateX(100px) rotateY(90deg);
+				/*background: #F08080;*/
+			}
+			.a:hover div:nth-child(3){
+				transform: translateX(200px) rotateY(90deg);
+				/*background: #F08080;*/
+			}
+			.a div:nth-child(4){
+				transform: translateX(-100px) rotateY(90deg);
+				/*background: #F19108;*/
+			}
+			.a:hover div:nth-child(4){
+				transform: translateX(-200px) rotateY(90deg);
+				/*background: #F19108;*/
+			}
+			.a div:nth-child(5){
+				transform: translateY(100px) rotateX(90deg);
+				/*background: #222222;*/
+			}
+			.a:hover div:nth-child(5){
+				transform: translateY(200px) rotateX(90deg);
+				/*background: #222222;*/
+			}
+			.a div:nth-child(6){
+				transform: translateY(-100px) rotateX(90deg);
+			}
+			.a:hover div:nth-child(6){
+				transform: translateY(-200px) rotateX(90deg);
+			}
+			.a>span{
+				width:100px;
+				height: 100px;
+				background: #fff;
+				position: absolute;
+				color: #fff;
+				border:1px solid #222;
+				font-size:30px;
+				text-align: center;
+				line-height: 200px;
+				display:block;
+				margin-top:50px;
+				margin-left:50px
+			}
+			.a span:nth-child(7){
+				transform: translateZ(50px);
+				/*background: #0000FF;*/
+			}
+			.a span:nth-child(8){
+				transform: translateZ(-50px);
+				/*background: #0000FF;*/
+			}
+			.a span:nth-child(9){
+				transform: translateX(50px) rotateY(90deg);
+				/*background: #F08080;*/
+			}
+			.a span:nth-child(10){
+				transform: translateX(-50px) rotateY(90deg);
+				/*background: #F19108;*/
+			}
+			.a span:nth-child(11){
+				transform: translateY(50px) rotateX(90deg);
+				/*background: #222222;*/
+			}
+			.a span:nth-child(12){
+				transform: translateY(-50px) rotateX(90deg);
+			}
+			@keyframes name{
+				from{transform: rotateX(0deg) rotateY(0deg);}
+				to{ transform: rotateX(360deg) rotateY(360deg);}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="a">
+				<div>1</div>
+				<div>2</div>
+				<div>3</div>
+				<div>4</div>
+				<div>5</div>
+				<div>6</div>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				
+			</div>
+		</div>
+	</body>
+</html>
